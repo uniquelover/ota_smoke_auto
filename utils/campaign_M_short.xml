@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+    
+    <!-- <suite nb_loop="1" name="Setup"> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/disable_TCO_WD</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/command_option</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/enable_coredump</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/SST_debug_option_bplog</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/SST_debug_option_debug_malloc</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/device_language</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/startup</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/push_golden_contents</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/handle_hand_icon</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/precondition_ok_google</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/SST_debug_option_bplog_via_ui</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/turn_off_auto_rotation</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/set_display_timeout</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/set_screen_lock</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/validate_webview_using</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/connect_wifi</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/reboot_device</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/disable_TCO_WD</TC> -->
+
+        <!-- <TC nb_loop="1">UI/PRECONDITION/precondition_delete_alarms</TC> -->
+		<!-- <TC nb_loop="1">UI/PRECONDITION/set_volume</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/set_brightness</TC> -->
+        <!-- <TC nb_loop="1" mode="WiFi_data">UI/PRECONDITION/add_google_account</TC> -->
+        <!-- <TC nb_loop="1" mode="WiFi_data">UI/PRECONDITION/add_email_account</TC> -->
+
+        <!-- <TC nb_loop="1" mode="WiFi_data">UI/PRECONDITION/precondition_unsynchro_chrome</TC> -->
+
+        <!-- <TC nb_loop="1">UI/PRECONDITION/update_contact_number</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/import_contact</TC> -->
+
+        <!-- <TC nb_loop="1" mode="WiFi_data">UI/PRECONDITION/precondition_google_play</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/precondition_time_auto_update</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/precondition_location_on_video</TC> -->
+        <!-- <TC nb_loop="1" mode="WiFi_data">UI/PRECONDITION/precondition_default_streaming_reader</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/precondition_photo_reader_and_remove_account</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/precondition_default_photo_reader</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/precondition_google_drive</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/precondition_google_music</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/precondition_hangouts</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/precondition_calendar</TC> -->
+
+        <!-- <TC nb_loop="1" mode="WiFi_data">UI/PRECONDITION/precondition_delete_all_bookmark</TC> -->
+        <!-- <TC nb_loop="1" mode="WiFi_data">UI/PRECONDITION/precondition_set_bookmark</TC> -->
+        <!-- <TC nb_loop="1" mode="WiFi_data">UI/PRECONDITION/precondition_set_homepage</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/reboot_device</TC> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/disable_TCO_WD</TC> -->
+
+    <!-- </suite> -->
+
+    <!-- <suite nb_loop="1" name="Check"> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/disable_TCO_WD</TC> -->
+        <!-- <TC nb_loop="1" report_testcase_name="[CHECK] CALL CHECK" mode="2G">UI/TELEPHONY/make_call_from_phone_book</TC> -->
+        <!-- <TC nb_loop="1" report_testcase_name="[CHECK] MMS CHECK" mode="3G" filename="img_300Ko_jpg.jpg">UI/MESSAGING/send_mms_picture</TC> -->
+        <!-- <TC nb_loop="1" report_testcase_name="[CHECK] EMAIL CHECK" mode="4G">UI/EMAIL/send_email_with_attachment</TC> -->
+        <!-- <TC nb_loop="1" report_testcase_name="[CHECK] BROWSING CHECK" mode="WiFi">UI/BROWSING/open_att_homepage</TC> -->
+        <!-- <TC nb_loop="1" report_testcase_name="[CHECK] PLAYSTORE CHECK part1" mode="WiFi" applist="[0]">UI/STOREFRONT/download_app</TC> -->
+        <!-- <TC nb_loop="1" report_testcase_name="[CHECK] PLAYSTORE CHECK part2" applist="[0]">UI/STOREFRONT/delete_downloaded_app</TC> -->
+        <!-- <TC nb_loop="1" report_testcase_name="[CHECK] CAMERA/VIDEO CHECK part 1">UI/MULTIMEDIA/record_video</TC> -->
+        <!-- <TC nb_loop="1" report_testcase_name="[CHECK] CAMERA/VIDEO CHECK part 2">UI/MULTIMEDIA/delete_video</TC> -->
+        <!-- <TC nb_loop="1" report_testcase_name="[CHECK] MUSIC CHECK">UI/MULTIMEDIA/play_music</TC> -->
+    <!-- </suite> -->
+
+    <!-- <suite nb_loop="1000" name="Core"> -->
+        <!-- <TC nb_loop="1">UI/PRECONDITION/disable_TCO_WD</TC> -->
+
+        <!-- <TC nb_loop="2">UI/TELEPHONY/delete_contacts</TC> -->
+        <!-- <TC nb_loop="2">UI/TELEPHONY/add_contacts</TC> -->
+
+        <!-- <TC nb_loop="1" mode="2G">UI/EMAIL/send_email_with_noattachment</TC> -->
+        <!-- <TC nb_loop="1" mode="3G">UI/EMAIL/send_email_with_noattachment</TC> -->
+        <!-- <TC nb_loop="1" mode="4G">UI/EMAIL/send_email_with_noattachment</TC> -->
+        <!-- <TC nb_loop="4" mode="WiFi">UI/EMAIL/send_email_with_noattachment</TC> -->
+
+        <!-- <TC nb_loop="1" mode="2G">UI/EMAIL/send_email_with_attachment</TC> -->
+        <!-- <TC nb_loop="1" mode="3G">UI/EMAIL/send_email_with_attachment</TC> -->
+        <!-- <TC nb_loop="1" mode="4G">UI/EMAIL/send_email_with_attachment</TC> -->
+        <!-- <TC nb_loop="2" mode="WiFi">UI/EMAIL/send_email_with_attachment</TC> -->
+
+        <!-- <TC nb_loop="2" mode="4G">UI/EMAIL/open_email</TC> -->
+        <!-- <TC nb_loop="3" mode="WiFi">UI/EMAIL/open_email</TC> -->
+
+
+        <!-- <TC nb_loop="1" mode="2G">UI/BROWSING/open_att_homepage</TC> -->
+        <!-- <TC nb_loop="2" mode="WiFi">UI/BROWSING/open_att_homepage</TC> -->
+        <!-- <TC nb_loop="1" mode="3G">UI/BROWSING/open_att_homepage</TC> -->
+        <!-- <TC nb_loop="2" mode="WiFi">UI/BROWSING/open_att_homepage</TC> -->
+        <!-- <TC nb_loop="2" mode="4G">UI/BROWSING/open_att_homepage</TC> -->
+        <!-- <TC nb_loop="2" mode="WiFi">UI/BROWSING/open_att_homepage</TC> -->
+
+        <!-- <TC nb_loop="1" mode="2G">UI/BROWSING/navigate_tolink</TC> -->
+        <!-- <TC nb_loop="2" mode="WiFi">UI/BROWSING/navigate_tolink</TC> -->
+        <!-- <TC nb_loop="1" mode="3G">UI/BROWSING/navigate_tolink</TC> -->
+        <!-- <TC nb_loop="2" mode="WiFi">UI/BROWSING/navigate_tolink</TC> -->
+        <!-- <TC nb_loop="2" mode="4G">UI/BROWSING/navigate_tolink</TC> -->
+        <!-- <TC nb_loop="2" mode="WiFi">UI/BROWSING/navigate_tolink</TC> -->
+
+        <!-- <TC nb_loop="1" mode="2G">UI/BROWSING/top_websites</TC> -->
+        <!-- <TC nb_loop="1" mode="3G">UI/BROWSING/top_websites</TC> -->
+        <!-- <TC nb_loop="1" mode="4G">UI/BROWSING/top_websites</TC> -->
+        <!-- <TC nb_loop="4" mode="WiFi">UI/BROWSING/top_websites</TC> -->
+
+
+        <!-- <TC nb_loop="1">UI/STOREFRONT/open_close_storefront</TC> -->
+
+        <!-- <TC nb_loop="1" mode="WiFi" applist="[2]">UI/STOREFRONT/download_app</TC> -->
+        <!-- <TC nb_loop="1" mode="3G" applist="[0]">UI/STOREFRONT/download_app</TC> -->
+        <!-- <TC nb_loop="2" mode="WiFi" applist="[13,4]">UI/STOREFRONT/download_app</TC> -->
+        <!-- <TC nb_loop="1" mode="4G" applist="[1]">UI/STOREFRONT/download_app</TC> -->
+        <!-- <TC nb_loop="3" mode="WiFi" applist="[5,6,7]">UI/STOREFRONT/download_app</TC> -->
+
+        <!-- <TC nb_loop="1" mode="4G" applist="[0]">UI/STOREFRONT/download_native_app</TC> -->
+        <!-- <TC nb_loop="1" mode="WiFi" applist="[1]">UI/STOREFRONT/download_native_app</TC> -->
+
+        <!-- <TC nb_loop="1">UI/STOREFRONT/close_storefront</TC> -->
+        <!-- <TC nb_loop="8" applist="[0,1,2,13,4,5,6,7]">UI/STOREFRONT/open_close_downloaded_app</TC> -->
+        <!-- <TC nb_loop="2" applist="[0,1]">UI/STOREFRONT/open_close_downloaded_native_app</TC> -->
+        <!-- <TC nb_loop="8" applist="[0,1,2,13,4,5,6,7]">UI/STOREFRONT/delete_downloaded_app</TC> -->
+        <!-- <TC nb_loop="2" applist="[0,1]">UI/STOREFRONT/delete_downloaded_native_app</TC> -->
+        <!-- <TC nb_loop="1">UI/STOREFRONT/close_storefront</TC> -->
+
+
+        <!-- <TC nb_loop="5">UI/PIM/calendar_add_event</TC> -->
+        <!-- <TC nb_loop="1">UI/PIM/clock_set_alarm</TC> -->
+        <!-- <TC nb_loop="5">UI/PIM/calendar_delete_event</TC> -->
+        <!-- <TC nb_loop="1">UI/PIM/clock_delete_alarm</TC> -->
+        <!-- <TC nb_loop="1">UI/PIM/add_task</TC> -->
+        <!-- <TC nb_loop="1">UI/PIM/open_task</TC> -->
+        <!-- <TC nb_loop="1">UI/PIM/delete_task</TC> -->
+
+
+        <!-- <TC nb_loop="2">UI/MULTIMEDIA/record_video</TC> -->
+        <!-- <TC nb_loop="2">UI/MULTIMEDIA/video_playback</TC> -->
+        <!-- <TC nb_loop="2">UI/MULTIMEDIA/delete_video</TC> -->
+        <!-- <TC nb_loop="2">UI/MULTIMEDIA/capture_picture</TC> -->
+        <!-- <TC nb_loop="2">UI/MULTIMEDIA/open_picture</TC> -->
+        <!-- <TC nb_loop="2">UI/MULTIMEDIA/delete_picture</TC> -->
+        <!-- <TC nb_loop="1">UI/MULTIMEDIA/record_audio</TC> -->
+        <!-- <TC nb_loop="1">UI/MULTIMEDIA/play_recorded_audio</TC> -->
+        <!-- <TC nb_loop="1">UI/MULTIMEDIA/delete_audio</TC> -->
+        <!-- <TC nb_loop="1" mode="4G">UI/MULTIMEDIA/stream</TC> -->
+        <!-- <TC nb_loop="2" mode="WiFi">UI/MULTIMEDIA/stream</TC> -->
+        <!-- <TC nb_loop="2">UI/MULTIMEDIA/open_and_close_music_player</TC> -->
+        <!-- <TC nb_loop="5">UI/MULTIMEDIA/play_music</TC> -->
+        <!-- <TC nb_loop="1">UI/MULTIMEDIA/close_music_player</TC> -->
+        <!-- <TC nb_loop="2">UI/MULTIMEDIA/set_theme</TC> -->
+
+
+        <!-- <TC nb_loop="1" mode="WiFi">UI/MULTITASKING/browser_home</TC> -->
+        <!-- <TC nb_loop="10">UI/MULTITASKING/switch_apps</TC> -->
+        <!-- <TC nb_loop="1">UI/MULTITASKING/close_browser</TC> -->
+
+
+        <!-- <TC nb_loop="1" mode="4G">UI/NAVIGATION/menu_navigation_methods</TC> -->
+
+
+        <!-- <TC nb_loop="1">UI/WIFI/wifi_off_and_disconnect</TC> -->
+        <!-- <TC nb_loop="4">UI/WIFI/wifi_on_off</TC> -->
+        <!-- <TC nb_loop="4">UI/WIFI/connect_disconnect</TC> -->
+        <!-- <TC nb_loop="1">UI/WIFI/wifi_on_and_connect</TC> -->
+
+        <!-- <TC nb_loop="2">UI/NFC/nfc_on_off</TC> -->
+
+    <!-- </suite> -->
+	
+	<suite nb_loop="1" name="Setup">
+	    <TC nb_loop="1">UI/OTA/down_release</TC>
+		<TC nb_loop="1">UI/OTA/extract_package</TC>
+	</suite>
+	
+	<suite nb_loop="1" name="Check">
+	    <random>
+	        <TC nb_loop="1">UI/OTA/check_release</TC>
+		    <TC nb_loop="1">UI/OTA/extract_package</TC>
+		    <TC nb_loop="1">UI/OTA/check_cur_build</TC>
+		</random>
+	</suite>
+	
+	<suite nb_loop="1" name="OtaCore">
+	    <TC nb_loop="3">UI/OTA/ota_download</TC>
+		<TC nb_loop="3">UI/OTA/ota_update</TC>
+	</suite>
+	
+	
+	
+</root>
