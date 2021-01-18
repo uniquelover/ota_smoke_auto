@@ -1,0 +1,7 @@
+loop_folder_prefix = "smoke"
+execution_main_list = '../testcases/smoke/test_ota_smoke.py'
+log_path = '../Logs/dongfeng'
+loops = 1
+main_extra_flags = ['--delete-crashlogs', 'no', '--enable-html']
+delete_release = False
+

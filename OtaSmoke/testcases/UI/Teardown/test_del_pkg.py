@@ -11,11 +11,11 @@ sys.path.append('/home/autotest/Downloads/OtaSmoke/common')
 import pytest
 from common_helper import *
 import datetime
-# import allure
+import allure
 
 
 
-# @allure.feature("OTA SMOKE AUTO TEST")
+@allure.feature("OTA SMOKE AUTO TEST")
 class TestOtaSmokeClass(object):
 
     def setup_class(self):
@@ -56,12 +56,12 @@ class TestOtaSmokeClass(object):
             raise msg
 
 
-    # def test_check_env(self):
-    #     try:
-    #         env_status = check_env()
-    #         assert env_status
-    #     except Exception as msg:
-    #         raise msg
+    def test_check_env(self):
+        try:
+            env_status = check_env()
+            assert env_status
+        except Exception as msg:
+            raise msg
 
     def test_check_update_res(self):
         try:
@@ -79,11 +79,11 @@ class TestOtaSmokeClass(object):
         print('ota smoke auto test ending', cur_time)
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    try:
-        pytest.main(["test_ota_smoke.py", "-s", '--html=ota_smoke_test.html'])
-    except Exception as e:
-        raise e
-    finally:
-        print('ota smoke auto test completed')
+#     try:
+#         pytest.main(["test_ota_smoke.py", "-s", '--html=ota_smoke_test.html'])
+#     except Exception as e:
+#         raise e
+#     finally:
+#         print('ota smoke auto test completed')

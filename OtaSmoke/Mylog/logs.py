@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 
 """
-@ name:logs.py
-@ date: 12/7/2020
-@ function: log
+@ ---------------------------------
+@ File:logs.py
+@ Created: 12/7/2020
+@ Usage: log
 @ IDE: VS CODE
-@ python version: 3.7.1
+@ Python version: 3.7.1
+@ Licence: <your licence>
+@ ---------------------------------
 """
 
 import logging
@@ -17,12 +20,11 @@ class GetLogs:
 
     def __init__(self):
         """
-        @ params:None
+        @ param :None
         @ others:current_time
                  log_path
         """
         current_time = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
-        # log_path = r'D:\\OtaSmoke\\Logs\\'
         log_path = '/home/autotest/Downloads/OtaSmoke/Logs'
         if not os.path.exists(log_path):
             os.makedirs(log_path)
@@ -30,15 +32,14 @@ class GetLogs:
     
     def __set_logs(self, level, message):
         """
-        @ params:level set log levels ['debug','info','warning','error','critical]
-        @ return: none
+        @ param:level set log levels ['debug','info','warning','error','critical]
+        @ returns: None
         """
 
         
         logger = logging.getLogger()
         logger.setLevel("DEBUG")  
 
-        
 
         fh = logging.FileHandler(self.logname, 'a', encoding='gbk')
         fh.setLevel('DEBUG')
@@ -46,7 +47,7 @@ class GetLogs:
         ch.setLevel('DEBUG')
 
         
-        formatter = logging.Formatter('%(asctime)s - %(lineno)d - %(levelname)s - %(message)s')
+        formatter = logging.Formatter('[%(asctime)s] - [%(lineno)d] - [%(levelname)s] - %(message)s')
         ch.setFormatter(formatter)
         fh.setFormatter(formatter)
 
@@ -94,7 +95,4 @@ class GetLogs:
 if __name__ == "__main__":
 
     mylog = GetLogs()
-    # mylog.log_info('only for test .....')
-    # mylog.log_debug('debug level......')
-    # mylog.log_error('error level')
     mylog.log_critical('critical level')

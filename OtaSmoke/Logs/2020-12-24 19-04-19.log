@@ -1,4 +1,0 @@
-2020-12-24 19:04:19,881 - logs.py - -63 - INFO - Executing commandpython
-2020-12-24 19:04:19,881 - logs.py - -63 - INFO - ---------FAILURE MESSAGE-------
-2020-12-24 19:04:19,881 - logs.py - -63 - INFO - Error message is Execute command return value is not 0!
-2020-12-24 19:04:19,881 - logs.py - -63 - INFO - ---------FAILURE MESSAGE-------
