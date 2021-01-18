@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
 """
-@ name:common_helper.py
-@ time: 12/7/2020
-@ function: Some common functions for ota download package
-
-__author__='kang'
-__version__='v1.0'
+@ ----------------------------------------------------
+@ Name:common_helper.py
+@ Created on: 12/7/2020
+@ Usage: Some common functions for ota auto test
+@ author: tiankang <kang.tian@excelfore-china.com>
+@ version: v1.0dongfeng
+@ ----------------------------------------------------
 """
 
 
@@ -19,14 +20,14 @@ from logs import GetLogs
 import datetime
 import shlex
 import subprocess
-# sys.path.append('/home/autotest/Downloads/OtaSmoke/Mylog')
-# sys.path.append(r'D:\\TestPython\\Mylog')
+import configparser
 
 
 mylogs = GetLogs()
 
 
-def create_path():
+def create_path(default_path_lin='/home/autotest/Downloads/Excelforepackage',file_name=None,need_create_file=False):
+
     if get_platform() == 'Windows':
         default_path_win = r'C:\\Users\\Administrator\\Downloads\\Excelforepackage'
         if not judge_path():
@@ -38,18 +39,29 @@ def create_path():
             except:
                 mylogs.log_error('Failed to creat folder')
     if get_platform() == 'Linux':
-        default_path_lin = '/home/autotest/Downloads/Excelforepackage'
-        if not judge_path():
+        if not judge_path(default_path_lin):
             try:
                 os.makedirs(default_path_lin, 0777)
                 sleep(1)
-                mylogs.log_info('Target folder has been created on linux')
+                mylogs.log_info('Target folder named {} has been created on linux'.format(default_path_lin.split('/')[-1]))
+                if need_create_file:
+                    mylogs.log_info('Need to create zip files')
+                    if not os.path.exists(default_path_lin + '/' + file_name):
+                        os.chdir(default_path_lin)
+                        os.mkdir(file_name)
+                        mylogs.log_info('zip file has been created ')
+                        return True
                 return True
             except:
                 mylogs.log_error('Failed to creat folder')
+        else:
+
+            mylogs.log_info('Excelforepackage folder exists')
+            return True
 
 
-def judge_path():  # TODO: Judge weather the path to save ota auto release exists or not.
+def judge_path(lin_path='/home/autotest/Downloads/Excelforepackage'):
+
     if get_platform() == 'Windows':
         win_path = r'C:\\Users\\Administrator\\Downloads\\Excelforepackage'
         folder = win_path.split('\\')[-1]
@@ -60,28 +72,40 @@ def judge_path():  # TODO: Judge weather the path to save ota auto release exist
             mylogs.log_error('Target folder named {0} not exists'.format(folder))
             return False
     if get_platform() == 'Linux':
-        lin_path = '/home/autotest/Downloads/Excelforepackage'
+        # lin_path = '/home/autotest/Downloads/Excelforepackage'
         folder = lin_path.split('/')[-1]
         if os.path.exists(lin_path) == True:
-            mylogs.log_info('Target folder named {0} exists'.format(folder))
+            mylogs.log_info('Target folder named {} exists'.format(folder))
             return True
         else:
-            mylogs.log_error('Target folder named {0} not exists'.format(folder))
+            mylogs.log_info('Target folder named {} not exists'.format(folder))
             return False
 
 
-def download_release():  # TODO: Download the latest release from url given by developer.
+def parser_ini(inikey,inivaluse):
+
+        ini_file = "test_cfg.ini"
+        config = configparser.ConfigParser()
+        if os.path.exists(ini_file):
+            config.read(ini_file)
+            convaluse=config.get(inikey,inivaluse)
+            return convaluse.encode("utf-8")
+        else:
+            mylogs.log_error('no ini config file')
+            return False
+
+
+def download_release(pkg_save_path='/home/autotest/Downloads/Excelforepackage'):  
+
+    # TODO: Download the latest release from url given by developer.
+
     response_code = None
 
+    url = parser_ini('releaseinfo','url')
 
-
-    url = 'http://dev.excelfore-china.com:82/esyncrelease/esync_client_release/CEE/V20.12.3.0/excelfore_x86_' \
-          '64_esync_client_evo_release_2020.12.4.23.8.tar.gz'
     try_times = 0
     total_times = 3
     if judge_path():
-        # res = requests.get(url)
-        # response_code = res.status_code
         while try_times < total_times:
             mylogs.log_info('Download package for %d times' % (try_times + 1))
             res = requests.get(url)
@@ -89,8 +113,8 @@ def download_release():  # TODO: Download the latest release from url given by d
             if response_code == 200:
                 mylogs.log_info('Download latest release file successfully')
                 if parser_web_path:
-                    release_name = parser_web_path(url)
-                    save_path = os.path.join('/home/autotest/Downloads/Excelforepackage', release_name)
+                    release_name = parser_web_path()
+                    save_path = os.path.join(pkg_save_path, release_name)
                     try:
                         with open(save_path, 'wb') as f:
                             f.write(res.content)
@@ -98,12 +122,7 @@ def download_release():  # TODO: Download the latest release from url given by d
                     except Exception as e:
                         mylogs.log_error("There has a error : %s" % e)
                         return False
-                    # finally:
-                    #     f.close()
                 break
-            # else:
-            #     mylogs.log_error('download package three times failed')
-            #     return
             sleep(3)
             try_times += 1
         if response_code != 200 and try_times == 3:
@@ -141,22 +160,18 @@ def download_release():  # TODO: Download the latest release from url given by d
             f.close()
 
 
-def parser_web_path(url=None):
+def parser_web_path():
     """
-    @ params:url
-    @ return: str
+    @ param: url
+    @ returns: str
     """
     url = 'http://dev.excelfore-china.com:82/esyncrelease/esync_client_release/CEE/V20.12.3.0/' \
           'excelfore_x86_64_esync_client_evo_release_2020.12.4.23.8.tar.gz'
 
     res = url.split("/")[-1]
-    print(res)
+    # print(res)
     return res
  
-
-def delete_release():
-    pass
-
 
 def get_pwd():
     current_path = os.getcwd()
@@ -165,13 +180,14 @@ def get_pwd():
 
 
 def extract_package():
+
     module = 'tarfile'
     f = __import__(module)
     # import tarfile
     if parser_web_path:
         release_name = parser_web_path()
-        # target_path = r'C:\Users\Administrator\Downloads\Excelforepackage'  # windows
-        target_path = '/home/autotest/Downloads/Excelforepackage'  # linunx
+        # target_path = r'C:\Users\Administrator\Downloads\Excelforepackage'  # windows env
+        target_path = '/home/autotest/Downloads/Excelforepackage'  # linunx env 
         target_file = os.path.join(target_path, release_name)
         extract_file_name = os.path.join(target_path, 'excelfore')
         if os.path.exists(target_file):
@@ -249,6 +265,7 @@ def run_cmds(cmd, cwd=None, timeout=None, shell=False):
 
 
 def set_ubuntu_env():
+
     cmd = 'eval $(./set_ubuntu_env.py)'
     try:
 
@@ -269,19 +286,14 @@ def set_ubuntu_env():
 
 
 def get_platform():
+    """
+    only run scripts on windows and linux now.
+    """
 
     if os.name == 'posix':
         return 'Linux'
     if os.name == 'nt':
         return 'Windows'
-
-
-def get_python_version():
-    pass
-
-
-def change_work_path():
-    pass
 
 
 def check_env():
@@ -290,44 +302,55 @@ def check_env():
         mylogs.log_info('Set ESYNC HOEM DIR successfully')
         return True
     else:
-        mylogs.log_error('Failed to set ESYNC HOEM DIR')
+        mylogs.log_error('**********Failed to set ESYNC HOEM DIR*******************')
         return False
 
 
 def get_newest_folder(path_file):
+
     lists = os.listdir(path_file)
     lists.sort(key=lambda fn: os.path.getmtime(path_file +'/'+fn))
-    # print(lists)
     for x in reversed(lists):
         if os.path.isdir((os.path.join(path_file,x))):
-            # print(x)
             floder_newest = os.path.join(path_file,x)
             break
     return floder_newest
     
 
 def check_update_res(path_file=None):
+
     path_file = "/home/autotest/Downloads/dm_tree/DevInfo/Ext/Excelfore/CampaignState/CampaignCorrelator"
     state_path = '/State/value'
     if get_newest_folder(path_file):
         value_path = get_newest_folder(path_file) + state_path
         with open(value_path,'r') as f:
-            vaule_data = f.read()
-    if vaule_data == "90":
-              mylogs.log_info('---Ota update successfully---')
-              return True
-    else:
-        mylogs.log_error('---Failed to update ota---')
-        return False
-        
+            value_data = f.read()
+    # if value_data == "90" or value_data == "100":
+    #           mylogs.log_info('Ota update successfully')
+    #           return True
+    while True:
+        if value_data == "90" or value_data == "100":
+            mylogs.log_info('Ota update successfully')
+            return True
+        else:
+            mylogs.log_error('Failed to update ota')
+            return False
+        sleep(10*3)
+    # else:
+    #     mylogs.log_error('Failed to update ota')
+    #     return False
+
 
 if __name__ == "__main__":
 
     # parser_web_path()
     # get_pwd()
-    # judge_path()
-    # create_path()
+    # target_path = "/home/autotest/Downloads/Excelforepackage/excelfore/esync/bin/doip"
+    # create_path(target_path,'update.zip',True)
     # download_release()
+    # print(res)
     # extract_package()
     # run_cmd('python')
     check_update_res()
+    # parser_ini('releaseinfo','url')
+    # test_uicode_to_str()

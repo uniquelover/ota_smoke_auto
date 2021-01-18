@@ -30,7 +30,7 @@ class XMLParse:
     def get_suite_attr(self, cur_suite):
 
         try:
-            suite_name = cur_suite.attrib['name']  # attrib: 元素属性字典
+            suite_name = cur_suite.attrib['name']  # attrib: yuansushuxing dict
         except:
             suite_name = 'invalid suite name'
 
@@ -57,7 +57,7 @@ class XMLParse:
 
 if __name__ == '__main__':
 
-    xmlparse = XMLParse('campaign_M_short.xml')
+    xmlparse = XMLParse('campaign_OTA_moni.xml')
     res = xmlparse.parse()
     for xmlsuite in res:
         print(xmlsuite['testcase_list'])
