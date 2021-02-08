@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<node>
+  <acl>
+    <none/>
+  </acl>
+  <format>chr</format>
+  <name>PrivateKeyPassword</name>
+  <type/>
+  <sensitive>true</sensitive>
+  <encrypted>L/dcqsu+qSAaKoOMgZFkrMjzsTfhLLhekXFLRHtBQw8=</encrypted>
+  <signed>-no-signature-</signed>
+</node>

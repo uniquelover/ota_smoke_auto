@@ -9,15 +9,15 @@
 """
 
 import sys
-sys.path.append('/home/autotest/Downloads/OtaSmoke/Mylog')
+sys.path.append('/home/tiankang/Downloads/OtaSmoke/Mylog')
+from logs import GetLogs
 import requests
 import os
 from time import sleep
-from logs import GetLogs
 import subprocess
+import commands
 
-
-
+mylogs = GetLogs()
 
 
 
@@ -33,27 +33,23 @@ class CmdHelper:
 
         cmd = "gnome-terminal --full-screen -t {0} -e 'bash -c \"source ./{1}; exec bash\"'".format(terminal_name,script_path)
 
-        # print(cmd) 
-
         if os.path.exists(script_path):
 
             try:
-
-                # os.system(cmd)
-
-                # os.popen(cmd)
 
                 subprocess.Popen(cmd,stdin=subprocess.PIPE, shell=True, bufsize=4096)
 
                 return True
 
             except Exception as e:
-            	print('Error happen while executing cmd due to {}'.format(e))
-            	raise e
+
+                print('Error happen while executing cmd due to {}'.format(e))
+                
+                raise e
 
 
     @staticmethod
-    def run_cmd(self,cmd, cwd=None, timeout=None, shell=False):
+    def run_cmd(cmd, cwd=None, timeout=None, shell=False):
         """
         param: cmd, the command will be executed
         param: cwd, the work direction where command executed
@@ -86,7 +82,7 @@ class CmdHelper:
         else:
             ccmd = shlex.split(cmd)
 
-        print('execute command {}'.format(ccmd))
+        mylogs.log_info('execute command {}'.format(ccmd))
         sleep(3)
         end_time = 0
         if timeout:
@@ -94,9 +90,9 @@ class CmdHelper:
             end_time = datetime.datetime.now() + datetime.timedelta(seconds=timeout)
 
         if cwd:
-            print('command run in {}'.format(cwd))
+            mylogs.log_info('command run in {}'.format(cwd))
         else:
-            print('-------no cwd---------')
+            mylogs.log_info('-------no cwd---------')
 
         sub = subprocess.Popen(ccmd, cwd=cwd, stdin=subprocess.PIPE, shell=shell, bufsize=4096)
 
@@ -108,12 +104,41 @@ class CmdHelper:
         return str(sub.returncode)
 
 
+    @staticmethod
+    def kill_esync():
+
+        cmd = 'killall esyncclient'
+
+        # res = commands.getoutput(cmd)
+        # result = subprocess.Popen(cmd)
+        mylogs.log_info('command run in {}'.format(cmd))
+        result = os.popen(cmd)
+
+        # print(type(res))
+        mylogs.log_info(result.read())
+
+        
+        # if result.read() == "esyncclinet: no process found":
+        #     print('ok')
+        #     return True
+        # else:
+        #     print('failed')
+        #     return False
+        
+
+
+
+
+
 if __name__ == "__main__":
 
-    CmdHelper.launch_terminal('udsserver','launch_udsserver_terminal.sh')
+    # CmdHelper.launch_terminal('setupdmtree','run_set_dmtree_script.sh')
+
+    # CmdHelper.launch_terminal('main','launch_main.sh')
     # sleep(5)
 
     # CmdHelper.launch_terminal('esyncclient','launch_esyncclient_terminal.sh')
     # sleep(5)
 
     # CmdHelper.launch_terminal('otamonitor','launch_otamonitor_terminal.sh')
+    CmdHelper.kill_esync()

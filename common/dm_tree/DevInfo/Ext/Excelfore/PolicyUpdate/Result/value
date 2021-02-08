@@ -1,0 +1,1 @@
+[ { "type": "fontana:engine_speed", "rpm": "0" }, { "type": "fontana:parked" }, { "type": "fontana:start_stop_not_running" }, { "type": "fontana:motor_not_running" } ]

@@ -17,18 +17,20 @@ except:
 import time
 from functools import wraps
 import inspect
-import sys
 from time import sleep		 
+import sys
+sys.path.append('/home/tiankang/Downloads/OtaSmoke/Mylog')
+from logs import GetLogs
+import os
 
-
-
+mylogs = GetLogs()
 
 
 def get_func_name(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         r = func(*args, **kwargs)
-        print('now execute is %s' % func.__name__)
+        mylogs.log_info('Now executing is %s' % func.__name__)
         return r
     return wrapper
 
@@ -39,6 +41,7 @@ class UserActivity:
     k = PyKeyboard()
 
     def __init__(self):
+
         """
         Call pymouse and pykeyboard method
         Set default click event times 1
@@ -50,27 +53,26 @@ class UserActivity:
         self.click_times = 1
         self.sleep_times = 0
 
+
     @get_func_name
     def click_tab_key(self,sleep_times,run_times=0,*args):
         try:
             if run_times:
-
-                # print('args.....')
 
                 run = run_times
 
             else:
                 run = self.click_times
 
-            print('clicking tab key will be executed %d times' % run)
+            mylogs.log_info('clicking tab key will be executed %d times' % run)
 
             for _ in range(0,run):
                 if sleep_times:
-                    print('Has interval time****')
+                    mylogs.log_info('****Has interval time for {} seconds****'.format(sleep_times))
                     sleep(sleep_times)
                     self.k.tap_key(self.k.tab_key)
                 else:
-                    print('*****No interval time')
+                    mylogs.log_info('****No interval time****')
                     self.k.tap_key(self.k.tab_key)
         except Exception as e:
             raise e
@@ -86,18 +88,18 @@ class UserActivity:
             else:
                 run = self.click_times
 
-            print('clicking space key will be executed %d times' % run)
+            mylogs.log_info('clicking space key will be executed %d times' % run)
 
             for _ in range(0,run):
                 if sleep_times:
-                    print('Has interval time****')
+                    mylogs.log_info('****Has interval time for {} seconds****'.format(sleep_times))
                     sleep(sleep_times)
                     self.k.tap_key(self.k.space)
                 else:
-                    print('*****No interval time')
+                    mylogs.log_info('****No interval time****')
                     self.k.tap_key(self.k.space)
         except Exception as e:
-            print('error while clicking space key')
+            mylogs.log_error('Error happen while clicking space key')
             raise e
  
     @get_func_name
@@ -116,28 +118,36 @@ class UserActivity:
             else:
                 run = self.click_times
 
-            print('pressing ctrl key will be executed %d times' % run)
+            mylogs.log_info('pressing ctrl key will be executed %d times' % run)
 
             for _ in range(0,run):
                 if sleep_times:
-                    print('Has interval time****')
+                    mylogs.log_info('****Has interval time for {} seconds****'.format(sleep_times))
                     sleep(sleep_times)
                     self.k.press_key(self.k.control_key)
                     self.k.tap_key(key_name)
                     self.k.release_key(self.k.control_key)
                 else:
-                    print('*****No interval time')
+                    mylogs.log_info('****No interval time****')
                     self.k.press_key(self.k.control_key)
                     self.k.tap_key(key_name)
                     self.k.release_key(self.k.control_key)
         except Exception as e:
-            print('Error happen while press ctrl + {} keys'.format(key_name))
+            mylogs.log_error('Error happen while press ctrl + {} keys'.format(key_name))
             raise e
 
-    @staticmethod
-    def click_enter_key():
-    	UserActivity.k.tap_key(k.space)
-        pass         
+   # @staticmethod
+    def click_enter_key(self):
+        """
+        click enter key from keyboard
+        """
+        print("Start to press enter key")
+        sleep(2)
+    	self.k.tap_key(self.k.enter_key)
+        sleep(1)
+        print("press enter key second time")
+        self.k.tap_key(self.k.enter_key)
+        
 
     def click_esc_key(self):
         pass
@@ -147,44 +157,105 @@ class UserActivity:
     @get_func_name
     def test_decorator():
 
-        print('test decorator')
+        mylogs.log_info('test decorator')
 
     # @staticmethod
-    def operate_ota_monitor(self):
+    def click_connect_btn(self):
 
-        self.click_tab_key(1,2)
-        sleep(2)
-        self.click_space_key(1,1)
-        sleep(1)
-        self.click_tab_key(1,1)
-        self.click_space_key(1,1)
-
-
-    def close_ota_monitor(self):
+        mylogs.log_info('****Start to click connect button****')
 
         try:
 
-            self.press_ctrl_keys('d',1)
-
-            sleep(1)
-
-            self.press_ctrl_keys('c',1)
-
-            sleep(1)
-
-            self.press_ctrl_keys('c',1)
-
-            sleep(1)
-
-            self.press_ctrl_keys('d',1)
-
-            print('Close all terminal include uds and esync and monitor')
+            self.click_tab_key(1,2)
+            sleep(2)
+            self.click_space_key(1,1)
+            # sleep(1)
+            # self.click_tab_key(1,1)
+            # self.click_space_key(1,1)
 
         except Exception as e:
 
-            print('Error occur due to {}'.format(e))
+            mylogs.log_error('Error occurs due to {}'.format(e))
 
             raise e
+
+
+    def close_all_terminals(self):
+
+        mylogs.log_info('****Start to close all terminals****')
+
+        try:
+
+
+            self.press_ctrl_keys('d',1)  # close ota monitor terminal
+
+            sleep(1)
+
+            self.press_ctrl_keys('c',1)  # close esync client terminal
+
+            sleep(1)
+
+            self.press_ctrl_keys('c',1)  # close uds server terminal
+
+            sleep(1)
+
+            self.press_ctrl_keys('d',1)
+
+            sleep(1)
+
+            self.press_ctrl_keys('d',1) # close setup dm tree terminal
+
+            mylogs.log_info('Close all terminal include uds and esync and monitor')
+
+        except Exception as e:
+
+            mylogs.log_error('Error occur due to {}'.format(e))
+
+            raise e
+
+    def click_download_and_install_btn(self):
+        """
+        step1: click download button
+        step2: click install button
+        """
+        mylogs.log_info('****Start to click download button****')
+
+        self.m.click(250,500,1)
+
+        sleep(2)
+
+        mylogs.log_info('****Start to click installation button****')
+
+        self.m.click(600,500,1)
+
+
+    def click_close_btn(self):
+        """
+        close ota monitor hmi window
+        """
+        mylogs.log_info('****Start to click close button****')
+        try:
+            self.m.click(745,65,1)
+        except Exception as e:
+            mylogs.log_error('Error occur due to {}'.format(e))
+            raise e
+        else:
+            pass
+        finally:
+            pass
+
+
+    def take_screen_shot(self):
+
+        try:
+            os.system('gnome-screenshot -wb')
+
+            mylogs.log_info('****Get screen_shot****')
+
+        except Exception as e:
+
+            mylogs.log_error("Error happen while taking screen_shot due to {}".format(e))
+
 
 
 
@@ -197,4 +268,4 @@ if __name__ == "__main__":
     sleep(5)
     user = UserActivity()
     # user.operate_ota_monitor()
-    user.close_ota_monitor()
+    user.click_enter_key()

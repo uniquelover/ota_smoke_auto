@@ -11,9 +11,9 @@
 function set_env(){
 
 	echo 'set temporary environment variable'
-	export ESYNC_HOME_DIR=/home/autotest/Downloads/Excelforepackage/excelfore/esync
+	export ESYNC_HOME_DIR=/home/tiankang/Downloads/Excelforepackage/excelfore/esync
 	sleep 2
-	export LD_LIBRARY_PATH=/home/autotest/Downloads/Excelforepackage/excelfore/esync/lib
+	export LD_LIBRARY_PATH=/home/tiankang/Downloads/Excelforepackage/excelfore/esync/lib
 	echo 'set temporary environment variable completed'
 
 
@@ -29,9 +29,9 @@ function change_path(){
     
     default_path=$(pwd)
     echo 'now work directions is:'  $default_path
-    doip_folder="/home/autotest/Downloads/Excelforepackage/excelfore/esync/bin/doip"
-    update_file="/home/autotest/Downloads/Excelforepackage/excelfore/esync/bin/doip/update.zip"
-    path="/home/autotest/Downloads/Excelforepackage/excelfore/esync/bin/"
+    doip_folder="/home/tiankang/Downloads/Excelforepackage/excelfore/esync/bin/doip"
+    update_file="/home/tiankang/Downloads/Excelforepackage/excelfore/esync/bin/doip/update.zip"
+    path="/home/tiankang/Downloads/Excelforepackage/excelfore/esync/bin/"
 
 	cd $path
 
@@ -73,7 +73,7 @@ function check_env(){
 
 	sync_path=$(env | grep ESYNC_HOME_DIR)
 
-	set_path="ESYNC_HOME_DIR=/home/autotest/Downloads/Excelforepackage/excelfore/esync/bin"
+	set_path="ESYNC_HOME_DIR=/home/tiankang/Downloads/Excelforepackage/excelfore/esync/bin"
 
 	echo $sync_path
 
@@ -101,7 +101,7 @@ function close_terminal(){
 
 function execute_esync_client(){
 
-	./esyncclient -p ../etc/policies.json -t /home/autotest/Downloads/dm_tree/
+	./esyncclient -p ../etc/policies.json -t /home/tiankang/Downloads/dm_tree/
 
 
 }

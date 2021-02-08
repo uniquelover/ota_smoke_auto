@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+# _*_ coding: UTF-8 _*_
 
 """
 @ ----------------------------------------------------------------------------
@@ -14,12 +15,17 @@ and an unique entrance for total test framework.
 
 
 import sys
-sys.path.append('/home/autotest/Downloads/OtaSmoke/testframework/run_test')
+sys.path.append('/home/tiankang/Downloads/OtaSmoke/testframework/run_test')
+sys.path.append('/home/tiankang/Downloads/OtaSmoke/common')
 from runtests import *
+from cmd_helper import *
 import argparse
 import os
 import time
 import subprocess
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 
 SETUP_STAGE = 0
@@ -56,6 +62,7 @@ def command_format():
 
 
 def execute_cmd(cmd):
+
     print ("Executing command " + cmd)
     try:
 
@@ -79,7 +86,6 @@ def ask_if_continue():
     return answer in ['yes', 'y']
 
 
-# def main(config, skip_setup=False, skip_main_step=False, reportname='--html=ota_smoke_test.html'):
 # def main():
 
     # arg = get_url()
@@ -105,8 +111,13 @@ def get_url():
     return parser.parse_args()
 
 
+def run_main():
+    print('test ota ')
+
+
+
 if __name__ == "__main__":
-    # get_url()
+    # get_url()      
     # main()
     # execute_cmd('pytest ../testcases/smoke/test_ota_smoke.py')
     # parser = argparse.ArgumentParser()
@@ -117,5 +128,6 @@ if __name__ == "__main__":
     # configuration = Configuration()
     # configuration.load(config_file)
 
-    # execfile('/home/autotest/Downloads/OtaSmoke/testframework/run_test/runtests.py')
-    main('/home/autotest/Downloads/OtaSmoke/testcases/smoke/dongfeng/test_dongfeng_smoke','--html=/home/autotest/Downloads/OtaSmoke/Logs/dongfeng/test_dongfeng_ota_smoke.html')
+    # execfile('/home/tiankang/Downloads/OtaSmoke/testframework/run_test/runtests.py')
+    main('/home/tiankang/Downloads/OtaSmoke/testcases/smoke/dongfeng/test_dongfeng_smoke','--html=/home/tiankang/Downloads/OtaSmoke/Logs/dongfeng/OtaSmoke_dongfeng.html')
+    # run_main()
