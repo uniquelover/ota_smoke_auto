@@ -1,0 +1,156 @@
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs

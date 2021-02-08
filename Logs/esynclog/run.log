@@ -1,0 +1,301 @@
+[0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;32m2021-02-08 14:58:30.759262 11246  [INF]  [ini_configs.c:ini_configs_deinit:400] ini_configs_deinit
+[0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+[0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+[0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+[0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+[0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+[0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+[0m[0;32m2021-02-08 14:58:30.759273 11246  [INF]  [ini_configs.c:ini_configs_deinit:400] ini_configs_deinit
+[0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+[0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+[0m[1;33m2021-02-08 14:58:30.759276 11246  [WRN]  [log_rotation.c:rotation_dbg_to_file_init:93] ignore saving rotation debug log
+[0m[0;32m2021-02-08 14:58:30.759278 11246  [INF]  [esyncclient.c:main:205] esyncclient heads/feature_CEE-44-0-gf08e0db-dirty build on Feb  7 2021 15:39:49 start
+[0m[0;32m2021-02-08 14:58:30.759785 11246  [INF]  [service.c:load_service_library:57] successfully loaded 'libesyncbus.so'
+[0m[0;32m2021-02-08 14:58:30.759830 11246  [INF]  [service.c:load_service_library:57] successfully loaded 'libdmclient.so'
+[0m[0;32m2021-02-08 14:58:30.759873 11246  [INF]  [service.c:load_service_library:57] successfully loaded 'libdwlservice.so'
+[0m[0;32m2021-02-08 14:58:30.759911 11246  [INF]  [service.c:load_service_library:57] successfully loaded 'libscservice.so'
+[0m[0;32m2021-02-08 14:58:30.759950 11246  [INF]  [service.c:load_service_library:57] successfully loaded 'libsystemagent.so'
+[0m[0;32m2021-02-08 14:58:30.759992 11246  [INF]  [service.c:load_service_library:57] successfully loaded 'libhmiagent.so'
+[0m[0;32m2021-02-08 14:58:30.760152 11246  [INF]  [agent.c:hmiagent_set_config:200] success to init hmiagent impl library
+[0m[0;32m2021-02-08 14:58:30.760220 11246  [INF]  [service.c:load_service_library:57] successfully loaded 'libappagent.so'
+[0m[0;32m2021-02-08 14:58:30.760302 11246  [INF]  [service.c:load_service_library:57] successfully loaded 'libpolicyagent.so'
+[0m[1;37m2021-02-08 14:58:30.760370 11246  [DBG]  [agent.c:load_policy_impl_library:78] load library success [libpolicyagent_impl.so].
+[0m[1;37m2021-02-08 14:58:30.760427 11246  [DBG]  [agent.c:load_policy_vehicle_config:147] policy=fontana:parked key=(null) type=4 ign_cond=true op_sym=0 safe_min=0 safe_max=0.
+[0m[1;37m2021-02-08 14:58:30.760431 11246  [DBG]  [agent.c:load_policy_vehicle_config:147] policy=fontana:epb_locked key=(null) type=5 ign_cond=false op_sym=0 safe_min=0 safe_max=0.
+[0m[1;37m2021-02-08 14:58:30.760434 11246  [DBG]  [agent.c:load_policy_vehicle_config:147] policy=fontana:car_not_charging key=(null) type=7 ign_cond=false op_sym=0 safe_min=0 safe_max=0.
+[0m[1;37m2021-02-08 14:58:30.760454 11246  [DBG]  [agent.c:load_policy_vehicle_config:147] policy=fontana:motor_not_running key=(null) type=10 ign_cond=false op_sym=0 safe_min=0 safe_max=0.
+[0m[1;37m2021-02-08 14:58:30.760455 11246  [DBG]  [agent.c:load_policy_vehicle_config:147] policy=fontana:start_stop_not_running key=(null) type=3 ign_cond=true op_sym=0 safe_min=0 safe_max=0.
+[0m[1;37m2021-02-08 14:58:30.760458 11246  [DBG]  [agent.c:load_policy_vehicle_config:147] policy=fontana:state_of_charge key=(null) type=1 ign_cond=false op_sym=1 safe_min=5 safe_max=100.
+[0m[1;37m2021-02-08 14:58:30.760459 11246  [DBG]  [agent.c:load_policy_vehicle_config:147] policy=fontana:power_state_of_charge key=(null) type=8 ign_cond=false op_sym=1 safe_min=5 safe_max=100.
+[0m[1;37m2021-02-08 14:58:30.760461 11246  [DBG]  [agent.c:load_policy_vehicle_config:147] policy=fontana:battery_voltage key=(null) type=6 ign_cond=false op_sym=1 safe_min=9000 safe_max=16000.
+[0m[1;37m2021-02-08 14:58:30.760463 11246  [DBG]  [agent.c:load_policy_vehicle_config:147] policy=fontana:vehicle_speed key=(null) type=2 ign_cond=false op_sym=-1 safe_min=0 safe_max=3000.
+[0m[1;37m2021-02-08 14:58:30.760465 11246  [DBG]  [agent.c:load_policy_vehicle_config:147] policy=fontana:engine_speed key=(null) type=9 ign_cond=true op_sym=-1 safe_min=0 safe_max=2000.
+[0m[0;32m2021-02-08 14:58:30.760507 11246  [INF]  [service.c:load_service_library:57] successfully loaded 'libupdateagent.so'
+[0m[0;32m2021-02-08 14:58:30.760563 11246  [INF]  [service.c:load_service_library:57] successfully loaded 'libesyncengine.so'
+[0m[0;32m2021-02-08 14:58:30.760611 11246  [INF]  [service.c:service_start:64] service start: 'DMClient'
+[0m[0;32m2021-02-08 14:58:30.760631 11246  [INF]  [thread.c:esync_thread_create:94] Create thread DMClient OK
+[0m[0;32m2021-02-08 14:58:30.760635 11246  [INF]  [service.c:service_start:64] service start: 'DWLService'
+[0m[0;32m2021-02-08 14:58:30.760675 11246  [INF]  [thread.c:esync_thread_create:94] Create thread DWLService OK
+[0m[0;32m2021-02-08 14:58:30.760678 11246  [INF]  [service.c:service_start:64] service start: 'SCService'
+[0m[0;32m2021-02-08 14:58:30.760698 11250  [INF]  [dmclient.c:esync_service_entry:55] dmclient service entry ....
+[0m[0;32m2021-02-08 14:58:30.760700 11251  [INF]  [dwlservice.c:esync_service_entry:273] download service entry ....
+[0m[0;32m[0;32m2021-02-08 14:58:30.760701 11246  [INF]  [thread.c:esync_thread_create:94] Create thread SCService OK
+[0m[0;32m2021-02-08 14:58:30.760776 11246  [INF]  [service.c:service_start:64] service start: 'SystemAgent'
+[0m2021-02-08 14:58:30.760731 11252  [INF]  [scservice.c:esync_service_entry:49] software configure service entry ....
+[0m[0;32m2021-02-08 14:58:30.760794 11246  [INF]  [thread.c:esync_thread_create:94] Create thread SystemAgent OK
+[0m[0;32m2021-02-08 14:58:30.760797 11246  [INF]  [service.c:service_start:64] service start: 'HmiAgent'
+[0m[0;32m[0;32m2021-02-08 14:58:30.760814 11246  [INF]  [thread.c:esync_thread_create:94] Create thread HmiAgent OK
+[0m[0;32m2021-02-08 14:58:30.760820 11246  [INF]  [service.c:service_start:64] 2021-02-08 14:58:30.760813 11253  [INF]  [systemagent.c:esync_service_entry:49] system agent service entry ....
+[0mservice start: 'AppAgent'
+[0m[0;32m2021-02-08 14:58:30.760829 11254  [INF]  [hmiagent.c:esync_service_entry:52] hmi agent service entry ....
+[0m[0;32m2021-02-08 14:58:30.760846 11246  [INF]  [thread.c:esync_thread_create:94] Create thread AppAgent OK
+[0m[0;32m2021-02-08 14:58:30.760850 11246  [INF]  [service.c:service_start:64] service start: 'PolicyAgent'
+[0m[0;32m2021-02-08 14:58:30.760860 11255  [INF]  [appagent.c:esync_service_entry:49] app agent service entry ....
+[0m[0;32m2021-02-08 14:58:30.760883 11246  [INF]  [thread.c:esync_thread_create:94] Create thread PolicyAgent OK
+[0m[0;32m2021-02-08 14:58:30.760893 11246  [INF]  [service.c:service_start:64] service start: 'UpdateAgent'
+[0m[0;32m2021-02-08 14:58:30.760893 11256  [INF]  [policyagent.c:esync_service_entry:144] policy agent service entry ....
+[0m[0;32m2021-02-08 14:58:30.760906 11246  [INF]  [thread.c:esync_thread_create:94] Create thread UpdateAgent OK
+[0m[0;32m2021-02-08 14:58:30.760910 11246  [INF]  [service.c:service_start:64] service start: 'eSyncEngine'
+[0m[0;32m2021-02-08 14:58:30.760926 11246  [INF]  [thread.c:esync_thread_create:94] Create thread eSyncEngine OK
+[0m[0;32m2021-02-08 14:58:30.760937 11257  [INF]  [updateagent.c:esync_service_entry:133] update agent service entry ....
+[0m[0;32m2021-02-08 14:58:30.761005 11258  [INF]  [esyncengine.c:esync_service_entry:2006] eSync engine service entry start running argv=0x0x7ffe902c8830 esyncengine_info=0x0x7fe367319280
+[0m[1;37m2021-02-08 14:58:31.761482 11260  [DBG]  [esyncengine.c:cb_timeout_none_resp:1395] timeout process, timeout for state:FE_OTAFSM_IDLE, curr_retry_cnt:1, send event:EVT_TYPE_RESPONSE_TIMEOUT
+[0m[1;37m2021-02-08 14:58:31.761666 11260  [DBG]  [event.c:esync_event_send:302] [NotFound] Send event EVT_TYPE_RESPONSE_TIMEOUT(67), event seqc: 1
+[0m[1;37m2021-02-08 14:58:31.761676 11258  [DBG]  [event.c:esync_event_wait:235] [eSyncEngine] Event EVT_TYPE_RESPONSE_TIMEOUT(67) coming in, event sequence: 1
+[0m[1;37m2021-02-08 14:58:31.761742 11258  [DBG]  [event.c:esync_event_wait:252] [eSyncEngine] Remove event EVT_TYPE_RESPONSE_TIMEOUT(67), event seqc: 1
+[0m[0;32m2021-02-08 14:58:31.761999 11258  [INF]  [esyncengine.c:state_machine_process:1935] state machine transform, src sta:FE_OTAFSM_IDLE, event:EVT_TYPE_RESPONSE_TIMEOUT, dst sta:FE_OTAFSM_IDLE
+[0m[1;37m2021-02-08 14:58:31.762080 11258  [DBG]  [event.c:esync_event_send:302] [eSyncEngine] Send event EVT_TYPE_START_FSM(1), event seqc: 2
+[0m[1;37m2021-02-08 14:58:31.762100 11258  [DBG]  [event.c:esync_event_wait:235] [eSyncEngine] Event EVT_TYPE_START_FSM(1) coming in, event sequence: 2
+[0m[1;37m2021-02-08 14:58:31.762113 11258  [DBG]  [event.c:esync_event_wait:252] [eSyncEngine] Remove event EVT_TYPE_START_FSM(1), event seqc: 2
+[0m[0;32m2021-02-08 14:58:31.762275 11258  [INF]  [esyncengine.c:state_machine_process:1935] state machine transform, src sta:FE_OTAFSM_IDLE, event:EVT_TYPE_START_FSM, dst sta:FE_OTAFSM_DMCLIENT_SESSION_RUNNING
+[0m[1;37m2021-02-08 14:58:31.762300 11258  [DBG]  [esyncengine.c:state_machine_process:1942] stop timer for state:FE_OTAFSM_IDLE
+[0m[1;37m2021-02-08 14:58:31.762312 11258  [DBG]  [esyncengine.c:state_machine_process:1950] start timer for state:FE_OTAFSM_DMCLIENT_SESSION_RUNNING
+[0m[1;37m2021-02-08 14:58:31.762359 11258  [DBG]  [event.c:esync_event_send:302] [eSyncEngine] Send event EVT_TYPE_DMC_SESSION_ACTIVE(2), event seqc: 3
+[0m[1;37m2021-02-08 14:58:31.762370 11250  [DBG]  [event.c:esync_event_wait:235] [DMClient] Event EVT_TYPE_DMC_SESSION_ACTIVE(2) coming in, event sequence: 3
+[0m[1;37m2021-02-08 14:58:31.762399 11250  [DBG]  [event.c:esync_event_wait:252] [DMClient] Remove event EVT_TYPE_DMC_SESSION_ACTIVE(2), event seqc: 3
+[0m[0;32m2021-02-08 14:58:31.762424 11250  [INF]  [oma.c:oma_session_start:951] oma session start ...
+[0m[1;37m2021-02-08 14:58:31.765376 11250  [DBG]  [oma.c:oma_task_init:427] OMA URL: http://dev.excelfore-china.com:12227/snap/oma
+[0m[0;32m2021-02-08 14:58:31.765422 11250  [INF]  [oma.c:oma_send_init:556] Start OMA session for OMA URL: [http://dev.excelfore-china.com:12227/snap/oma]
+[0m[1;37m2021-02-08 14:58:31.765750 11250  [DBG]  [oma.c:oma_send_init:660] Sending to http://dev.excelfore-china.com:12227/snap/oma [496 Bytes]:
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML>
+  <SyncHdr>
+    <VerDTD>1.2</VerDTD>
+    <VerProto>DM/1.2</VerProto>
+    <SessionID>1</SessionID>
+    <MsgID>1</MsgID>
+    <Target>
+      <LocURI>http://dev.excelfore-china.com:12227/snap/oma</LocURI>
+    </Target>
+    <Source>
+      <LocURI>urn:excelfore:device:EXCELFORE20201120000000003</LocURI>
+    </Source>
+  </SyncHdr>
+  <SyncBody>
+    <Alert>
+      <CmdID>1</CmdID>
+      <Data>1201</Data>
+    </Alert>
+    <Final/>
+  </SyncBody>
+</SyncML>
+
+[0m[1;37m2021-02-08 14:58:31.765859 11250  [DBG]  [oma.c:oma_session:854] Waiting OMA message
+[0m[0;32m2021-02-08 14:58:32.043832 11261  [INF]  [net.c:net_curl_exec:181] HTTP Response: 200
+[0m[1;37m2021-02-08 14:58:32.044202 11261  [DBG]  [net.c:net_curl_exec:210] Message arrived wake up
+[0m[1;37m2021-02-08 14:58:32.044303 11250  [DBG]  [oma.c:oma_session:878] Receive:
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML>
+  <SyncHdr>
+    <VerDTD>1.2</VerDTD>
+    <VerProto>DM/1.2</VerProto>
+    <SessionID>1</SessionID>
+    <MsgID>2</MsgID>
+  </SyncHdr>
+  <SyncBody>
+    <Get>
+      <CmdID>1</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./DevInfo/Ext/Excelfore/CampaignState/ExecutingCampaign</LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Get>
+      <CmdID>2</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./DevInfo/Ext/Excelfore/AbortVersion</LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Get>
+      <CmdID>3</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./DevInfo/Ext/Excelfore/Software/CurrentVersion</LocURI>
+        </Target>
+      </Item>
+      <Item>
+        <Target>
+          <LocURI>./DevInfo/Ext/Excelfore/Hardware/CurrentVersion</LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Status>
+      <CmdID>4</CmdID>
+      <MsgRef>1</MsgRef>
+      <CmdRef>1</CmdRef>
+      <Cmd>Alert</Cmd>
+      <Data>200</Data>
+    </Status>
+    <Final/>
+  </SyncBody>
+</SyncML>
+
+[0m[0;32m2021-02-08 14:58:32.044359 11250  [INF]  [oma.c:oma_session:881] Receive OMA message
+[0m[1;37m2021-02-08 14:58:32.044645 11250  [DBG]  [oma.c:oma_session_msg_proc:737] Process OMA command: Get
+[0m[1;37m2021-02-08 14:58:32.044679 11250  [DBG]  [oma.c:oma_cmd_process_get:152] Command ID 1 is for process OMA command: Get
+[0m[1;37m2021-02-08 14:58:32.044693 11250  [DBG]  [oma.c:oma_cmd_process_get:181] Get DM Node ./DevInfo/Ext/Excelfore/CampaignState/ExecutingCampaign
+[0m[1;37m2021-02-08 14:58:32.044879 11250  [DBG]  [oma.c:oma_session_msg_proc:737] Process OMA command: Get
+[0m[1;37m2021-02-08 14:58:32.044905 11250  [DBG]  [oma.c:oma_cmd_process_get:152] Command ID 2 is for process OMA command: Get
+[0m[1;37m2021-02-08 14:58:32.044917 11250  [DBG]  [oma.c:oma_cmd_process_get:181] Get DM Node ./DevInfo/Ext/Excelfore/AbortVersion
+[0m[1;37m2021-02-08 14:58:32.045110 11250  [DBG]  [oma.c:oma_session_msg_proc:737] Process OMA command: Get
+[0m[1;37m2021-02-08 14:58:32.045137 11250  [DBG]  [oma.c:oma_cmd_process_get:152] Command ID 3 is for process OMA command: Get
+[0m[1;37m2021-02-08 14:58:32.045149 11250  [DBG]  [oma.c:oma_cmd_process_get:181] Get DM Node ./DevInfo/Ext/Excelfore/Software/CurrentVersion
+[0m[1;37m2021-02-08 14:58:32.045295 11250  [DBG]  [oma.c:oma_cmd_process_get:181] Get DM Node ./DevInfo/Ext/Excelfore/Hardware/CurrentVersion
+[0m[1;37m2021-02-08 14:58:32.045438 11250  [DBG]  [oma.c:oma_session_msg_proc:737] Process OMA command: Status
+[0m[1;37m2021-02-08 14:58:32.045458 11250  [DBG]  [oma.c:oma_cmd_process_status:367] TODO
+[0m[1;37m2021-02-08 14:58:32.045467 11250  [DBG]  [oma.c:oma_session_msg_proc:737] Process OMA command: Final
+[0m[0;32m2021-02-08 14:58:32.045698 11250  [INF]  [oma.c:oma_send:698] Send OMA message [1991 Bytes] to http://dev.excelfore-china.com:12227/snap/oma
+[0m[1;37m2021-02-08 14:58:32.045719 11250  [DBG]  [oma.c:oma_send:699] Sending to http://dev.excelfore-china.com:12227/snap/oma [1991 Bytes]:
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML>
+  <SyncHdr>
+    <VerDTD>1.2</VerDTD>
+    <VerProto>DM/1.2</VerProto>
+    <SessionID>1</SessionID>
+    <MsgID>2</MsgID>
+    <Target>
+      <LocURI>http://dev.excelfore-china.com:12227/snap/oma</LocURI>
+    </Target>
+    <Source>
+      <LocURI>urn:excelfore:device:EXCELFORE20201120000000003</LocURI>
+    </Source>
+  </SyncHdr>
+  <SyncBody>
+    <Status>
+      <CmdID>1</CmdID>
+      <MsgRef>2</MsgRef>
+      <CmdRef>1</CmdRef>
+      <Cmd>Get</Cmd>
+      <Data>200</Data>
+    </Status>
+    <Results>
+      <CmdID>2</CmdID>
+      <CmdRef>1</CmdRef>
+      <Item>
+        <Source>
+          <LocURI>./DevInfo/Ext/Excelfore/CampaignState/ExecutingCampaign</LocURI>
+        </Source>
+        <Meta>
+          <Format>int</Format>
+        </Meta>
+        <Data>0</Data>
+      </Item>
+    </Results>
+    <Status>
+      <CmdID>3</CmdID>
+      <MsgRef>2</MsgRef>
+      <CmdRef>2</CmdRef>
+      <Cmd>Get</Cmd>
+      <Data>200</Data>
+    </Status>
+    <Results>
+      <CmdID>4</CmdID>
+      <CmdRef>2</CmdRef>
+      <Item>
+        <Source>
+          <LocURI>./DevInfo/Ext/Excelfore/AbortVersion</LocURI>
+        </Source>
+        <Meta>
+          <Format>bool</Format>
+        </Meta>
+        <Data>false</Data>
+      </Item>
+    </Results>
+    <Status>
+      <CmdID>5</CmdID>
+      <MsgRef>2</MsgRef>
+      <CmdRef>3</CmdRef>
+      <Cmd>Get</Cmd>
+      <Data>200</Data>
+    </Status>
+    <Results>
+      <CmdID>6</CmdID>
+      <CmdRef>3</CmdRef>
+      <Item>
+        <Source>
+          <LocURI>./DevInfo/Ext/Excelfore/Software/CurrentVersion</LocURI>
+        </Source>
+        <Meta>
+          <Format>chr</Format>
+        </Meta>
+        <Data>vlib</Data>
+      </Item>
+      <Item>
+        <Source>
+          <LocURI>./DevInfo/Ext/Excelfore/Hardware/CurrentVersion</LocURI>
+        </Source>
+        <Meta>
+          <Format>chr</Format>
+        </Meta>
+        <Data>DBCBCDCC0000</Data>
+      </Item>
+    </Results>
+    <Final/>
+  </SyncBody>
+</SyncML>
+
+[0m[1;37m2021-02-08 14:58:32.045827 11250  [DBG]  [oma.c:oma_session:903] Wait next OMA message
+[0m[1;37m2021-02-08 14:58:32.045838 11250  [DBG]  [oma.c:oma_session:854] Waiting OMA message
+[0m[0;32m2021-02-08 14:58:32.099989 11263  [INF]  [net.c:net_curl_exec:181] HTTP Response: 200
+[0m[1;37m2021-02-08 14:58:32.100200 11263  [DBG]  [net.c:net_curl_exec:210] Message arrived wake up
+[0m[1;37m2021-02-08 14:58:32.100308 11250  [DBG]  [oma.c:oma_session:878] Receive:
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML>
+  <SyncHdr>
+    <VerDTD>1.2</VerDTD>
+    <VerProto>DM/1.2</VerProto>
+    <SessionID>1</SessionID>
+    <MsgID>3</MsgID>
+  </SyncHdr>
+  <SyncBody>
+    <Final/>
+  </SyncBody>
+</SyncML>
+
+[0m[0;32m2021-02-08 14:58:32.100357 11250  [INF]  [oma.c:oma_session:881] Receive OMA message
+[0m[1;37m2021-02-08 14:58:32.100539 11250  [DBG]  [oma.c:oma_session_msg_proc:737] Process OMA command: Final
+[0m[0;32m2021-02-08 14:58:32.100573 11250  [INF]  [oma.c:oma_session:900] OMA session completed
+[0m[0;32m2021-02-08 14:58:32.100602 11250  [INF]  [oma.c:oma_session:922] Exit OMA session
+[0m[1;37m2021-02-08 14:58:32.100791 11250  [DBG]  [event.c:esync_event_send:302] [DMClient] Send event EVT_TYPE_DMC_SESSION_OK(4), event seqc: 4
+[0m[1;37m2021-02-08 14:58:32.100815 11258  [DBG]  [event.c:esync_event_wait:235] [eSyncEngine] Event EVT_TYPE_DMC_SESSION_OK(4) coming in, event sequence: 4
+[0m[1;37m2021-02-08 14:58:32.100847 11258  [DBG]  [event.c:esync_event_wait:252] [eSyncEngine] Remove event EVT_TYPE_DMC_SESSION_OK(4), event seqc: 4
+[0m[0;32m2021-02-08 14:58:32.101058 11258  [INF]  [esyncengine.c:state_machine_process:1935] state machine transform, src sta:FE_OTAFSM_DMCLIENT_SESSION_RUNNING, event:EVT_TYPE_DMC_SESSION_OK, dst sta:FE_OTAFSM_BUILD_OTA_TASK
+[0m[1;37m2021-02-08 14:58:32.101088 11258  [DBG]  [esyncengine.c:state_machine_process:1942] stop timer for state:FE_OTAFSM_DMCLIENT_SESSION_RUNNING
+[0m[1;37m2021-02-08 14:58:32.101100 11258  [DBG]  [esyncengine.c:state_machine_process:1950] start timer for state:FE_OTAFSM_BUILD_OTA_TASK
+[0m[1;37m2021-02-08 14:58:32.102200 11258  [DBG]  [esyncengine.c:do_fsm_build_ota_task:886] Not found OTA task
+[0m[1;37m2021-02-08 14:58:32.102271 11258  [DBG]  [event.c:esync_event_send:302] [eSyncEngine] Send event EVT_TYPE_BUILD_OTA_TASK_FAIL(6), event seqc: 5
+[0m[1;37m2021-02-08 14:58:32.102290 11258  [DBG]  [event.c:esync_event_wait:235] [eSyncEngine] Event EVT_TYPE_BUILD_OTA_TASK_FAIL(6) coming in, event sequence: 5
+[0m[1;37m2021-02-08 14:58:32.102307 11258  [DBG]  [event.c:esync_event_wait:252] [eSyncEngine] Remove event EVT_TYPE_BUILD_OTA_TASK_FAIL(6), event seqc: 5
+[0m[0;32m2021-02-08 14:58:32.102446 11258  [INF]  [esyncengine.c:state_machine_process:1935] state machine transform, src sta:FE_OTAFSM_BUILD_OTA_TASK, event:EVT_TYPE_BUILD_OTA_TASK_FAIL, dst sta:FE_OTAFSM_DMCLIENT_SESSION_RUNNING
+[0m[1;37m2021-02-08 14:58:32.102470 11258  [DBG]  [esyncengine.c:state_machine_process:1942] stop timer for state:FE_OTAFSM_BUILD_OTA_TASK
+[0m[1;37m2021-02-08 14:58:32.102482 11258  [DBG]  [esyncengine.c:state_machine_process:1950] start timer for state:FE_OTAFSM_DMCLIENT_SESSION_RUNNING
+[0m[1;37m2021-02-08 14:58:32.102490 11258  [DBG]  [esyncengine.c:do_fsm_build_ota_task_fail:902] book timer for 60 seconds
+[0m

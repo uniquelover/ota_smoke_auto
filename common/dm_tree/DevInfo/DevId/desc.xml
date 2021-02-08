@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<node>
+  <acl>
+    <none/>
+  </acl>
+  <format>chr</format>
+  <name>DevId</name>
+  <type/>
+  <signed>-no-signature-</signed>
+</node>
