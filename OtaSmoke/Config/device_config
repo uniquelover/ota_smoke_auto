@@ -1,8 +1,0 @@
-loop_folder_prefix = "campaign"
-execution_main_list = '../testsuite/campaign/smoke/campaign.xml'
-log_path = '../execute/logs/device1'
-loops = 1
-settings = ['../config/nose_settings.py', '../config/Device_Config_1.py']
-device_file = '../config/Device_Config_1.py'
-main_extra_flags = ['--delete-crashlogs', 'no', '--enable-html']
-setup_extra_flags = ['--enable-html']
