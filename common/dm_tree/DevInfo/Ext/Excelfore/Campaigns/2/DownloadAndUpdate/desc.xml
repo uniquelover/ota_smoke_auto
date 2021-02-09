@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<node>
+  <acl>
+    <none/>
+  </acl>
+  <format>node</format>
+  <name>DownloadAndUpdate</name>
+  <type/>
+</node>
