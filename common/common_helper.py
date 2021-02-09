@@ -12,7 +12,8 @@
 
 
 import sys
-sys.path.append('/home/autotest/Downloads/OtaSmoke/Mylog')
+sys.path.append('/home/tiankang/Downloads/OtaSmoke/Mylog')
+# sys.path.append('../Mylog')
 import requests
 import os
 from time import sleep
@@ -26,7 +27,7 @@ import configparser
 mylogs = GetLogs()
 
 
-def create_path(default_path_lin='/home/autotest/Downloads/Excelforepackage',file_name=None,need_create_file=False):
+def create_path(default_path_lin='/home/tiankang/Downloads/Excelforepackage',file_name=None,need_create_file=False):
 
     if get_platform() == 'Windows':
         default_path_win = r'C:\\Users\\Administrator\\Downloads\\Excelforepackage'
@@ -60,7 +61,7 @@ def create_path(default_path_lin='/home/autotest/Downloads/Excelforepackage',fil
             return True
 
 
-def judge_path(lin_path='/home/autotest/Downloads/Excelforepackage'):
+def judge_path(lin_path='/home/tiankang/Downloads/Excelforepackage'):
 
     if get_platform() == 'Windows':
         win_path = r'C:\\Users\\Administrator\\Downloads\\Excelforepackage'
@@ -72,7 +73,6 @@ def judge_path(lin_path='/home/autotest/Downloads/Excelforepackage'):
             mylogs.log_error('Target folder named {0} not exists'.format(folder))
             return False
     if get_platform() == 'Linux':
-        # lin_path = '/home/autotest/Downloads/Excelforepackage'
         folder = lin_path.split('/')[-1]
         if os.path.exists(lin_path) == True:
             mylogs.log_info('Target folder named {} exists'.format(folder))
@@ -95,7 +95,7 @@ def parser_ini(inikey,inivaluse):
             return False
 
 
-def download_release(pkg_save_path='/home/autotest/Downloads/Excelforepackage'):  
+def download_release(pkg_save_path='/home/tiankang/Downloads/Excelforepackage'):  
 
     # TODO: Download the latest release from url given by developer.
 
@@ -165,17 +165,19 @@ def parser_web_path():
     @ param: url
     @ returns: str
     """
-    url = 'http://dev.excelfore-china.com:82/esyncrelease/esync_client_release/CEE/V20.12.3.0/' \
-          'excelfore_x86_64_esync_client_evo_release_2020.12.4.23.8.tar.gz'
+    # url = 'http://dev.excelfore-china.com:82/esyncrelease/esync_client_release/CEE/V20.12.3.0/' \
+    #       'excelfore_x86_64_esync_client_evo_release_2020.12.4.23.8.tar.gz'
+    
+    if get_latest_release():
 
-    res = url.split("/")[-1]
-    # print(res)
-    return res
+        res = get_latest_release().split("/")[-1]
+        mylogs.log_info(res)
+        return res
  
 
 def get_pwd():
     current_path = os.getcwd()
-    print(current_path)
+    mylogs.log_info(current_path)
     return current_path
 
 
@@ -184,10 +186,9 @@ def extract_package():
     module = 'tarfile'
     f = __import__(module)
     # import tarfile
-    if parser_web_path:
-        release_name = parser_web_path()
-        # target_path = r'C:\Users\Administrator\Downloads\Excelforepackage'  # windows env
-        target_path = '/home/autotest/Downloads/Excelforepackage'  # linunx env 
+    if get_latest_release:
+        release_name = get_latest_release('/home/tiankang/Downloads/Excelforepackage')
+        target_path = '/home/tiankang/Downloads/Excelforepackage'  
         target_file = os.path.join(target_path, release_name)
         extract_file_name = os.path.join(target_path, 'excelfore')
         if os.path.exists(target_file):
@@ -242,7 +243,7 @@ def run_cmds(cmd, cwd=None, timeout=None, shell=False):
     else:
         ccmd = shlex.split(cmd)
 
-    print('execute command {}'.format(ccmd))
+    mylogs.log_info('execute command {}'.format(ccmd))
     sleep(3)
     end_time = 0
     if timeout:
@@ -250,9 +251,9 @@ def run_cmds(cmd, cwd=None, timeout=None, shell=False):
         end_time = datetime.datetime.now() + datetime.timedelta(seconds=timeout)
 
     if cwd:
-        print('command run in {}'.format(cwd))
+        mylogs.log_info('command run in {}'.format(cwd))
     else:
-        print('-------no cwd---------')
+        mylogs.log_info('-------no cwd---------')
 
     sub = subprocess.Popen(ccmd, cwd=cwd, stdin=subprocess.PIPE, shell=shell, bufsize=4096)
 
@@ -298,7 +299,7 @@ def get_platform():
 
 def check_env():
 
-    if os.environ['ESYNC_HOME_DIR'] == '/home/autotest/Downloads/Excelforepackage/excelfore/esync':
+    if os.environ['ESYNC_HOME_DIR'] == '/home/tiankang/Downloads/Excelforepackage/excelfore/esync':
         mylogs.log_info('Set ESYNC HOEM DIR successfully')
         return True
     else:
@@ -317,9 +318,9 @@ def get_newest_folder(path_file):
     return floder_newest
     
 
-def check_update_res(path_file=None):
+def check_update_res_campaign(path_file=None):
 
-    path_file = "/home/autotest/Downloads/dm_tree/DevInfo/Ext/Excelfore/CampaignState/CampaignCorrelator"
+    path_file = "/home/tiankang/Downloads/dm_tree/DevInfo/Ext/Excelfore/CampaignState/CampaignCorrelator"
     state_path = '/State/value'
     if get_newest_folder(path_file):
         value_path = get_newest_folder(path_file) + state_path
@@ -341,16 +342,102 @@ def check_update_res(path_file=None):
     #     return False
 
 
+def check_update_res_fumo(path_file=None):
+
+    path_file = "/home/tiankang/Downloads/data/dm_tree/FUMO/"
+    fumo = ['7905071-DB01-0x0011','7905072-DB02-0x0012','7905073-DB03-0x0013']
+    state_path = '/Ext/State/6/State/value'
+
+
+    whole_path = []
+
+    for i in fumo:
+
+        whole_path.append(path_file+i+state_path)
+
+
+    print(whole_path)
+
+    total_num = 0
+
+    for k in whole_path:
+
+        with  open(k,'r') as f:
+
+            value_data = f.read()
+
+        if value_data == "90" or value_data == "100":
+
+            mylogs.log_info('Ota update successfully at {}'.format(k))
+
+            total_num += 1
+
+    if total_num == 3:
+
+        mylogs.log_info("All packages update successfully")
+
+        return True
+
+    else:
+
+        mylogs.log_error('Some packages or all packages update failed')
+
+        return False
+
+
+
+
+
+
+
+
+
+
+
+    # if get_newest_folder(path_file):
+    #     value_path = get_newest_folder(path_file) + state_path
+    #     with open(value_path,'r') as f:
+    #         value_data = f.read()
+    # while True:
+    #     if value_data == "90" or value_data == "100":
+    #         mylogs.log_info('Ota update successfully')
+    #         return True
+    #     else:
+    #         mylogs.log_error('Failed to update ota')
+    #         return False
+    #     sleep(10*3)
+
+
+
+def get_latest_release(release_path):
+
+    if len(os.listdir(release_path)) > 0:
+        for i in os.listdir(release_path):
+            if os.path.isfile(os.path.join(release_path,i)):
+                if i.endswith('gz') and i.startswith('excelfore_x86_64'):
+                    mylogs.log_info(i)
+                    return i
+    else:
+        mylogs.log_error('No files and folder')
+        return False
+
+
+
 if __name__ == "__main__":
 
     # parser_web_path()
     # get_pwd()
-    # target_path = "/home/autotest/Downloads/Excelforepackage/excelfore/esync/bin/doip"
+    # target_path = "/home/tiankang/Downloads/Excelforepackage/excelfore/esync/bin/doip"
     # create_path(target_path,'update.zip',True)
     # download_release()
     # print(res)
     # extract_package()
     # run_cmd('python')
-    check_update_res()
+    # check_update_res()
     # parser_ini('releaseinfo','url')
     # test_uicode_to_str()
+    # judge_path()
+    # create_path()
+    # print(get_newest_folder('/home/tiankang/Downloads/dm_tree/DevInfo/Ext/Excelfore/CampaignState/CampaignCorrelator'))
+    # get_latest_release('/home/tiankang/Downloads/Excelforepackage')
+    check_update_res_fumo()

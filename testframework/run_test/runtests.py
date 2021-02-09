@@ -6,8 +6,9 @@
 @ Create on: 1/12/2021
 @ Author:tiankang <kang.tian@excelfore-china.com>
 # """
-# import sys
 
+
+import sys
 import pytest
 import os
 from time import sleep
@@ -40,17 +41,11 @@ def main(testsuite,htmlpath,outhtml=True):
 
         finally:
 
-        	print('Pytest running finished ')
-        	return True
+            print('Pytest running finished ')
+
+            return True
 
 
 if __name__ == '__main__':
     
-    main('/home/autotest/Downloads/OtaSmoke/testcases/smoke/dongfeng/test_dongfeng_smoke','--html=/home/autotest/Downloads/OtaSmoke/Logs/dongfeng/test_dongfeng_ota_smoke.html')
-    # sleep(10)
-    # main('../../testcases/smoke/dongfeng/test_dongfeng_smoke','--html=../../Logs/dongfeng/test_dongfeng_ota_smoke.html')
-
-    
-
-
-
+    main('/home/tiankang/Downloads/OtaSmoke/testcases/smoke/dongfeng/test_dongfeng_smoke','--html=/home/tiankang/Downloads/OtaSmoke/Logs/dongfeng/test_dongfeng_ota_smoke.html')

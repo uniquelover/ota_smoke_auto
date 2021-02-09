@@ -240,8 +240,8 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <h1>test_dongfeng_ota_smoke.html</h1>
-    <p>Report generated on 18-Jan-2021 at 10:48:56 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.22.1</p>
+    <h1>OtaSmoke_dongfeng.html</h1>
+    <p>Report generated on 08-Feb-2021 at 16:57:33 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.22.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -249,7 +249,7 @@ function filter_table(elem) {
         <td>{&apos;py&apos;: &apos;1.10.0&apos;, &apos;pytest&apos;: &apos;4.6.11&apos;, &apos;pluggy&apos;: &apos;0.13.1&apos;}</td></tr>
       <tr>
         <td>Platform</td>
-        <td>Linux-5.4.0-62-generic-x86_64-with-Ubuntu-18.04-bionic</td></tr>
+        <td>Linux-5.4.0-65-generic-x86_64-with-Ubuntu-18.04-bionic</td></tr>
       <tr>
         <td>Plugins</td>
         <td>{u&apos;html&apos;: u&apos;1.22.1&apos;, u&apos;metadata&apos;: u&apos;1.11.0&apos;}</td></tr>
@@ -257,7 +257,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>2.7.17</td></tr></table>
     <h2>Summary</h2>
-    <p>7 tests ran in 44.60 seconds. </p>
+    <p>7 tests ran in 73.59 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">7 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -272,69 +272,111 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_1create_folder.py::TestOtaSmokeClass::test_check_env</td>
-          <td class="col-duration">0.00</td>
+          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_1delete_fumo.py::TestOtaSmokeClass::test_create_folder</td>
+          <td class="col-duration">4.04</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">------------------------------ Captured log call -------------------------------<br/>INFO     root:logs.py:62 Target folder named Excelforepackage exists
-INFO     root:logs.py:62 Excelforepackage folder exists<br/></div></td></tr></tbody>
+            <div class="log">------------------------------ Captured log setup ------------------------------<br/>[32mINFO    [0m root:logs.py:62 --------------------test_1delete_fumo---------------------------------
+[32mINFO    [0m root:logs.py:62 Start to delete fumo files before run ota smoke at 2021-02-08 16-56-20<br/>------------------------------ Captured log call -------------------------------<br/>[32mINFO    [0m root:logs.py:62 Delete folder named FUMO successfully<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_2download.py::TestOtaSmokeClass::test_download_release</td>
-          <td class="col-duration">0.94</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">------------------------------ Captured log call -------------------------------<br/>INFO     root:logs.py:62 Target folder named Excelforepackage exists
-INFO     root:logs.py:62 Download package for 1 times
-DEBUG    urllib3.connectionpool:connectionpool.py:231 Starting new HTTP connection (1): dev.excelfore-china.com:82
-DEBUG    urllib3.connectionpool:connectionpool.py:461 http://dev.excelfore-china.com:82 "GET /esyncrelease/esync_client_release/CEE/V20.12.3.0/excelfore_x86_64_esync_client_evo_release_2020.12.4.23.8.tar.gz HTTP/1.1" 200 4875172
-INFO     root:logs.py:62 Download latest release file successfully<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_3extract_pkg.py::TestOtaSmokeClass::test_download_release</td>
-          <td class="col-duration">3.14</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">------------------------------ Captured log call -------------------------------<br/>INFO     root:logs.py:62 Extract file excelfore_x86_64_esync_client_evo_release_2020.12.4.23.8.tar.gz successfully<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_4create_zip_file.py::TestOtaSmokeClass::test_launch_udsserver</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">------------------------------ Captured log call -------------------------------<br/>INFO     root:logs.py:62 Target folder named doip exists
-INFO     root:logs.py:62 Excelforepackage folder exists<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_5launch_ota.py::TestOtaSmokeClass::test_launch_udsserver</td>
-          <td class="col-duration">10.05</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_5launch_ota.py::TestOtaSmokeClass::test_operate_otamonitor</td>
-          <td class="col-duration">8.05</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_6check_update_res.py::TestOtaSmokeClass::test_check_update_res</td>
+          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_3kill_esync.py::TestOtaSmokeClass::test_kill_esync</td>
           <td class="col-duration">0.01</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">------------------------------ Captured log setup ------------------------------<br/>INFO     root:logs.py:62 Target folder named Excelforepackage exists<br/>------------------------------ Captured log call -------------------------------<br/>INFO     root:logs.py:62 Ota update successfully<br/></div></td></tr></tbody></table></body></html>
+            <div class="log">------------------------------ Captured log setup ------------------------------<br/>[32mINFO    [0m root:logs.py:62 ---------------------test_3kill_esync-----------------------------------
+[32mINFO    [0m root:logs.py:62 Start to kill all esync before run ota smoke test at 2021-02-08 16-56-24<br/>------------------------------ Captured log call -------------------------------<br/>[32mINFO    [0m root:logs.py:62 command run in killall esyncclient
+[32mINFO    [0m root:logs.py:62<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_6launch_ota.py::TestOtaSmokeClass::test_launch_ota</td>
+          <td class="col-duration">15.04</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">------------------------------ Captured log setup ------------------------------<br/>[32mINFO    [0m root:logs.py:62 --------------------test_6launch_ota-----------------------------------
+[32mINFO    [0m root:logs.py:62 Start to execute test set env and launch ota at 2021-02-08 16-56-24<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_7operate_monitor.py::TestOtaSmokeClass::test_operate_monitor</td>
+          <td class="col-duration">40.19</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">------------------------------ Captured log setup ------------------------------<br/>[32mINFO    [0m root:logs.py:62 -----------------------test_7operate_monitor---------------------------
+[32mINFO    [0m root:logs.py:62 Start to execute test set env and launch ota at 2021-02-08 16-56-39<br/>------------------------------ Captured log call -------------------------------<br/>[32mINFO    [0m root:logs.py:62 ****Start to click connect button****
+[32mINFO    [0m root:logs.py:62 clicking tab key will be executed 2 times
+[32mINFO    [0m root:logs.py:62 ****Has interval time for 1 seconds****
+[32mINFO    [0m root:logs.py:62 ****Has interval time for 1 seconds****
+[32mINFO    [0m root:logs.py:62 Now executing is click_tab_key
+[32mINFO    [0m root:logs.py:62 clicking space key will be executed 1 times
+[32mINFO    [0m root:logs.py:62 ****Has interval time for 1 seconds****
+[32mINFO    [0m root:logs.py:62 Now executing is click_space_key
+[32mINFO    [0m root:logs.py:62 ****Start to click download button****
+[32mINFO    [0m root:logs.py:62 ****Start to click installation button****
+[32mINFO    [0m root:logs.py:62 ****Get screen_shot****
+[32mINFO    [0m root:logs.py:62 ****Start to click close button****<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_8check_update_result.py::TestOtaSmokeClass::test_check_update_result</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">------------------------------ Captured log setup ------------------------------<br/>[32mINFO    [0m root:logs.py:62 Target folder named Excelforepackage exists<br/>------------------------------ Captured log call -------------------------------<br/>[32mINFO    [0m root:logs.py:62 Ota update successfully at /home/tiankang/Downloads/data/dm_tree/FUMO/7905071-DB01-0x0011/Ext/State/6/State/value
+[32mINFO    [0m root:logs.py:62 Ota update successfully at /home/tiankang/Downloads/data/dm_tree/FUMO/7905072-DB02-0x0012/Ext/State/6/State/value
+[32mINFO    [0m root:logs.py:62 Ota update successfully at /home/tiankang/Downloads/data/dm_tree/FUMO/7905073-DB03-0x0013/Ext/State/6/State/value
+[32mINFO    [0m root:logs.py:62 All packages update successfully<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_9delete_files_folders.py::TestOtaSmokeClass::test_delete_files_folders</td>
+          <td class="col-duration">5.04</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">------------------------------ Captured log setup ------------------------------<br/>[32mINFO    [0m root:logs.py:62 ------------------test_9delete_files_foldes------------------------
+[32mINFO    [0m root:logs.py:62 Start to delete campaigns and campaignState folders at 2021-02-08 16-57-28<br/>------------------------------ Captured log call -------------------------------<br/>[32mINFO    [0m root:logs.py:62 Delete folder named Campaigns successfully
+[32mINFO    [0m root:logs.py:62 Delete folder named CampaignState successfully<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/smoke/dongfeng/test_dongfeng_smoke/test_a1collect_esync_log.py::TestOtaSmokeClass::test_collect_esync_log</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">------------------------------ Captured log setup ------------------------------<br/>[32mINFO    [0m root:logs.py:62 ------------------test_10collect_esync_log------------------------
+[32mINFO    [0m root:logs.py:62 Start to collect esync log at 2021-02-08 16-57-33<br/>------------------------------ Captured log call -------------------------------<br/>[1m[31mERROR   [0m root:logs.py:66 [0;31m2021-02-08 14:58:30.759232 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759257 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759260 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759261 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759264 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759265 11246  [ERR]  [log_rotation.c:rotation_init_info:209] Failed to init configs
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759266 11246  [ERR]  [log.c:loginit:101] Failed to init rotation info
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759268 11246  [ERR]  [ini_configs.c:ini_configs_get_real_path:276] Failed to find esync path
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759270 11246  [ERR]  [ini_configs.c:ini_configs_init:357] Failed to get ini path
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759271 11246  [ERR]  [ini_configs.c:ini_configs_init:389] Failed to load 
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759272 11246  [ERR]  [ini_configs.c:ini_configs_get_info:64] Invalid param
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759274 11246  [ERR]  [ini_configs.c:ini_configs_deinit:403] Failed to get info of esyncclient.ini
+
+[1m[31mERROR   [0m root:logs.py:66 [0m[0;31m2021-02-08 14:58:30.759275 11246  [ERR]  [ini_configs.c:ini_get_config:448] Failed to init oh configs
+
+[32mINFO    [0m root:logs.py:62 Has 13 errors totally<br/></div></td></tr></tbody></table></body></html>

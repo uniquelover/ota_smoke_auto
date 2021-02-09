@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<node>
+  <acl>
+    <none/>
+  </acl>
+  <format>bool</format>
+  <name>Satisfied</name>
+  <type/>
+</node>

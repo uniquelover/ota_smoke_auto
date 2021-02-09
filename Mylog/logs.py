@@ -25,7 +25,7 @@ class GetLogs:
                  log_path
         """
         current_time = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
-        log_path = '/home/autotest/Downloads/OtaSmoke/Logs'
+        log_path = '/home/tiankang/Downloads/OtaSmoke/Logs'
         if not os.path.exists(log_path):
             os.makedirs(log_path)
         self.logname = os.path.join(log_path, current_time + '.log')
